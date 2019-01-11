@@ -3,19 +3,27 @@
 
 <head>
   <meta charset="utf-8">
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
   <title>The Magical Button!</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-<h1> Hi Brittany, I hope you like this. (:  </h1>
-  <button id="cat-button">Brittany! Click me!!</button>
+<h1>  Brittany!!!!! I think this will make you happy :)   </h1>
+  <!-- <button id="cat-button"></button> -->
+  <button type="button" class="btn btn-warning cat-button">Click Me MEOW!!
+  </button>
   <div id="images">
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     // makes the button clickable 
-    $("#cat-button").on("click", function() {
+    $(".cat-button").on("click", function() {
 
       // calls the cat gif api
       var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
